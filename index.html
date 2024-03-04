@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<section class="box">
+<form id="survey-form">
+<label id="name-label">Name <br/><input id="name" type="text" placeholder="Enter your name" required></label>
+
+<label id="email-label">Email <br/><input id="email" type="email" placeholder="Enter your email"required></label>
+
+<label id="number-label" >Age(optional) <br/><input id="number" type="number" min="6" max="120" placeholder="Age"required></label>
+
+<label>Which option best describes your current role?</label>
+<select id="dropdown">
+  <option disabled>Select current role</option>
+  <option>Student</option>
+  <option>Full time job</option>
+  <option>Full time learner</option>
+  <option>Prefer not to say</option>
+  <option>Other</option>
+</select>
+
+<legend>Would you recommend freeCodeCamp to a friend?</legend>
+<label><input id="Definitely" type="radio" value="r1" name="r1" checked>Definitely</label>
+<label><input id="Maybe" type="radio" name="r1" value="r2">Maybe</label>
+<label><input id="Not sure" type="radio" name="r1" value="r3">Not sure</label>
+
+<legend id="items">What is your favorite feature of freeCodeCamp?</legend>
+<select id="dropdown">
+  <option disabled>Select an option</option>
+  <option>Challenges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>Open source</option>
+</select>
+
+<legend>What would you like to see improved? (Check all that apply)</legend>
+
+  <label><input class="list" type="checkbox" value="c1" name="c1">Front-end Projects</label>
+  <label><input class="list" type="checkbox" value="c2" name="c2">Back-end Projects</label>
+  <label><input class="list" type="checkbox" value="c3" name="c3">DataVisualization</label>
+  <label><input class="list" type="checkbox" value="c4" name="c4">Challenges</label>
+  <label><input class="list" type="checkbox" value="c5" name="c5">Open Source Community</label>
+  <label><input class="list" type="checkbox" value="c6" name="c6">Gitter help rooms</label>
+  <label><input class="list" type="checkbox" value="c7" name="c7">Videos</label>
+  <label><input class="list" type="checkbox" value="c8" name="c8">City Meetups</label>
+  <label><input class="list" type="checkbox" value="c9" name="c9">Wiki</label>
+  <label><input class="list" type="checkbox" value="c10" name="c10">Forum</label>
+ <input class="list" type="checkbox" value="c11" name="c11">Additional Courses
+
+  <legend id="items">Any comments or suggestions?</legend>
+  <textarea id='textarea' placeholder="Enter your comment here..."></textarea></label>
+
+  <button id="submit">Submit</button>
+</section>
+  </body>
+</html>
